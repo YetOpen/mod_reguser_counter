@@ -9,7 +9,8 @@
 	<authorUrl>www.htaccess.nl</authorUrl> 
 	<version>1.0</version> 
 	<description><![CDATA[
-	<b>Hello world, hello Counter</b>
+	<b>Hello world, hello Counter</b> <br />
+    Updated to work on Joomla 2.5 by maxxer@yetopen.it
  ]]></description>
 	<files>
 		<filename module="mod_reguser_counter">mod_reguser_counter.php</filename>
