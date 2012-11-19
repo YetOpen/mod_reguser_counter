@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mod_reguser_counter" default="dist" basedir=".">
+        <property name="src"   value="."/>
+	 	<property name="archive"  value="${project.basedir}" override="true"  />
+	    <fileset dir="${src}" id="allFiles">
+	        <include name="**" />
+	        <exclude name=".**" />
+	        <exclude name="build.*" />
+	        <exclude name="*.zip"/>
+	 	</fileset> 
+	 	<target name="dist" description="Prepare a distribution file.">
+	 		<echo msg="Creating archive..." />
+            <zip destfile="${archive}/mod_reguser_counter.zip">
+                <fileset refid="allFiles" />
+            </zip>                
+	 	</target>
+</project>
