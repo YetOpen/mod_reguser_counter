@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <!-- Name of the Module -->
+	<name>Registered user Counter</name> 
+ 
+    <!-- Name of the Author -->
+	<author>Remco de Jong</author> 
+ 
+    <!-- Version Date of the Module -->
+	<creationDate>2009-12-10</creationDate> 
+ 
+    <!-- Copyright information -->
+	<copyright>All rights reserved by Remco de Jong</copyright> 
+ 
+    <!-- License Information -->
+	<license>GPL 2.0</license> 
+ 
+    <!-- Author's email address -->
+	<authorEmail>remco@htaccess.nl</authorEmail> 
+ 
+    <!-- Author's website -->
+	<authorUrl>www.htaccess.nl</authorUrl> 
+ 
+    <!-- Module version number -->
+	<version>1.0</version> 
+ 
+    <!-- Description of what the module does -->
+	<description><![CDATA[
+	<b>Hello world, hello Counter</b>
+ ]]></description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+	<files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+		<filename module="mod_reguser_counter">mod_reguser_counter.php</filename>
+		<filename>index.html</filename>
+		<filename>counter_style.css</filename>
+		<filename>js/reguser_counter.js</filename>
+	</files>
+
+	<params>
+		<param name="speed" type="text" default="50" label="Speed in m/s" description="Speed in miliseconds" />
+		<param name="posttext" type="textarea" default="Registered users" label="Text" description="Short text" cols="30" rows="4" />
+	</params>
+	
+	</install>
