@@ -18,7 +18,7 @@ echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".JURI::Base()."modules/
 startCount(<?=$speed?>, <?=$total?>);
 </script>
 
-<div id="reguser_counter">0</div> 
+<div id="reguser_counter"><?php echo round($total * 0.8,0); ?></div> 
 <?php
 if ($params->get('posttext')!="") {echo "<div id=\"reguser_counter_text\">".$params->get('posttext')."</div>";}
 ?>
